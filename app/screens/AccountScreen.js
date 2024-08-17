@@ -27,11 +27,13 @@ const menuItems = [
 function AccountScreen(props) {
   return (
     <Screen style={styles.screen}>
-      <ListItem
-        title="My name"
-        subTitle="My Email"
-        image={require("../assets/micheal-scott.jpg")}
-      />
+      <View style={styles.profileContainer}>
+        <ListItem
+          title="Majid Hoseini"
+          subTitle="majhoseiny@gmail.com"
+          image={require("../assets/micheal-scott.jpg")}
+        />
+      </View>
       <View style={styles.container}>
         <FlatList
           data={menuItems}
@@ -61,6 +63,10 @@ function AccountScreen(props) {
 const styles = StyleSheet.create({
   container: {
     marginVertical: 20,
+  },
+  profileContainer: {
+    marginBottom: 20,
+    height: 100,
   },
   screen: {
     backgroundColor: colors.light,
