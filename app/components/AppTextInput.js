@@ -15,7 +15,11 @@ function AppTextInput({ icon, ...otherProps }) {
           style={styles.icon}
         />
       )}
-      <TextInput style={defaulStylyes.text} {...otherProps} />
+      <TextInput
+        placeholderTextColor={defaulStylyes.colors.medium}
+        style={defaulStylyes.text}
+        {...otherProps}
+      />
     </View>
   );
 }
