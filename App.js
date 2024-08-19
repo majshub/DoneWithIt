@@ -3,5 +3,5 @@ import ListingEditScreen from "./app/screens/ListingEditScreen";
 import MessagesScreen from "./app/screens/MessagesScreen";
 
 export default function App() {
-  return <MessagesScreen />;
+  return <ListingEditScreen />;
 }
