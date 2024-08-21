@@ -13,8 +13,8 @@ function CategoryPickerItem({ item, onPress }) {
           name={item.icon}
           size={80}
         />
+        <AppText style={styles.label}>{item.label}</AppText>
       </TouchableOpacity>
-      <AppText style={styles.label}>{item.label}</AppText>
     </View>
   );
 }
