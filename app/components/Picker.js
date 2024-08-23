@@ -5,7 +5,6 @@ import {
   StyleSheet,
   TouchableWithoutFeedback,
   Modal,
-  Button,
   FlatList,
 } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
@@ -13,6 +12,7 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import defaulStylyes from "../config/styles";
 import AppText from "./Text";
 import PickerItem from "./PickerItem";
+import Button from "./Button";
 
 function AppPicker({
   icon,
@@ -53,7 +53,9 @@ function AppPicker({
         </View>
       </TouchableWithoutFeedback>
       <Modal visible={modalVisible} animationType="slide">
-        <Button title="Close" onPress={() => setModalVisible(false)} />
+        <View style={styles.buttonContainer}>
+          <Button title="Close" onPress={() => setModalVisible(false)} />
+        </View>
         <FlatList
           data={items}
           keyExtractor={(item) => item.value.toString()}
@@ -75,6 +77,11 @@ function AppPicker({
 }
 
 const styles = StyleSheet.create({
+  buttonContainer: {
+    flexDirection: "row",
+    padding: 30,
+    width: "100%",
+  },
   container: {
     backgroundColor: defaulStylyes.colors.light,
     borderRadius: 25,
