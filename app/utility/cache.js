@@ -30,7 +30,7 @@ const get = async (key) => {
     if (!item) return null;
 
     if (isExpired(item)) {
-      AsyncStorage.removeItem(prefix + key);
+      await AsyncStorage.removeItem(prefix + key);
       return null;
     }
 
