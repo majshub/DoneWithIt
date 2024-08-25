@@ -7,13 +7,14 @@ import navigationTheme from "./app/navigation/navigationTheme";
 import AppNavigator from "./app/navigation/AppNavigator";
 import OfflineNotice from "./app/components/OfflineNotice";
 import { View } from "react-native";
+import AuthNavigator from "./app/navigation/AuthNavigator";
 
 export default function App() {
   return (
     <>
       <OfflineNotice />
       <NavigationContainer>
-        <AppNavigator />
+        <AuthNavigator />
       </NavigationContainer>
     </>
   );
