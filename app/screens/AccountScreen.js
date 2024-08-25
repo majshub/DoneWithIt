@@ -7,6 +7,7 @@ import Icon from "../components/Icon";
 import ListItemSeparator from "../components/lists/ListItemSeparator";
 import routes from "../navigation/routes";
 import useAuth from "../auth/useAuth";
+import Screen from "../components/Screen";
 
 const menuItems = [
   {
