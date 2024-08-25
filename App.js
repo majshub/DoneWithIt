@@ -5,11 +5,16 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 
 import navigationTheme from "./app/navigation/navigationTheme";
 import AppNavigator from "./app/navigation/AppNavigator";
+import OfflineNotice from "./app/components/OfflineNotice";
+import { View } from "react-native";
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <AppNavigator />
-    </NavigationContainer>
+    <>
+      <OfflineNotice />
+      <NavigationContainer>
+        <AppNavigator />
+      </NavigationContainer>
+    </>
   );
 }
