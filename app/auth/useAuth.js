@@ -18,5 +18,5 @@ export default useAuth = () => {
     authStorage.removeToken();
   };
 
-  return { user, logIn, setUser };
+  return { user, logIn, logOut, setUser };
 };
