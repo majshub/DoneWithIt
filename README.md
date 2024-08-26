@@ -82,12 +82,17 @@ Below are screenshots and a demo video showcasing the DoneWithIt app.
 
 ### Screenshots
 
-![Auth Screen](./media/auth_screen.png)
-![Home Screen](./media/home_screen.png)
-![Listing Details Screen](./media/listing_details_screen.png)
-![Listing Edit Screen](./media/listing_edit_screen.png)
-![Account Screen](./media/account_screen.png)
-![Messages Screen](./media/messages_screen.png)
+<p align="center">
+  <img src="./media/auth_screen.png" alt="Auth Screen" width="200" />
+  <img src="./media/home_screen.png" alt="Home Screen" width="200" />
+  <img src="./media/listing_details_screen.png" alt="Listing Details Screen" width="200" />
+</p>
+
+<p align="center">
+  <img src="./media/listing_edit_screen.png" alt="Listing Edit Screen" width="200" />
+  <img src="./media/account_screen.png" alt="Account Screen" width="200" />
+  <img src="./media/messages_screen.png" alt="Messages Screen" width="200" />
+</p>
 
 ### Demo Video
 
