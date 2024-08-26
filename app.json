@@ -24,12 +24,13 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": [
-      "expo-secure-store"
-    ],
+    "plugins": ["expo-secure-store"],
     "extra": {
       "eas": {
         "projectId": "ea046ebb-152c-4c4e-8038-bc74f5e15ac0"
+      },
+      "bugsnag": {
+        "apiKey": "1e83671e656402618794578397e3a626"
       }
     },
     "owner": "majidhoseini",
@@ -38,6 +39,14 @@
     },
     "updates": {
       "url": "https://u.expo.dev/ea046ebb-152c-4c4e-8038-bc74f5e15ac0"
+    },
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "@bugsnag/expo/hooks/post-publish.js",
+          "config": {}
+        }
+      ]
     }
   }
 }
