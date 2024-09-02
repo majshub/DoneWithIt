@@ -17,8 +17,8 @@
     "android": {
       "useHermes": true,
       "adaptiveIcon": {
-        "foregroundImage": "./app/assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./app/assets/icon.png",
+        "backgroundColor": "#e63c4b"
       }
     },
     "web": {

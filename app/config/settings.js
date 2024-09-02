@@ -2,13 +2,13 @@ import Constants from "expo-constants";
 
 const settings = {
   dev: {
-    apiUrl: "http://192.168.100.3:9000/api",
+    apiUrl: "https://donewithit-api-node.onrender.com/api",
   },
   staging: {
-    apiUrl: "http://192.168.100.3:9000/api",
+    apiUrl: "https://donewithit-api-node.onrender.com/api",
   },
   prod: {
-    apiUrl: "http://192.168.100.3:9000/api",
+    apiUrl: "https://donewithit-api-node.onrender.com/api",
   },
 };
 
